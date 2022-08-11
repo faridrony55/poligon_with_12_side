@@ -1,0 +1,306 @@
+ <style>
+
+#time .circle {
+  position: relative; 
+  width: 800px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+#time .circle svg {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+}
+
+ 
+#time #headingText {
+  position: absolute;
+  text-align: center;
+      font-family: 'Lato', sans-serif;  
+    line-height: 1.8; 
+    color: #999999;
+}
+
+
+#headingText h1{
+ 	text-transform: uppercase; font-weight: lighter; font-size: 45px; color: #515151;
+ 	font-weight:300;
+ }
+#headingText h2{
+ 	text-transform: uppercase; font-weight: lighter; font-size: 35px; color: #515151;
+ 	font-weight:300;
+ }
+
+#time .circle svg:nth-child(2) {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+}
+
+#time .circle svg polygon{
+  width: 50%;
+  height: 50%;
+  fill: transparent; 
+  stroke-width: 2px; 
+}
+
+#time .circle svg polygon:nth-child(2){
+  stroke: #bfbfbf;
+  stroke-dasharray: 1475; 
+  animation: dash 24s linear infinite;
+}
+
+svg circle {
+  fill: transparent;  
+  animation-direction: normal;
+  animation-fill-mode: forwards; 
+ 
+}
+ 
+svg circle:nth-child(3) {
+ animation: circle_3 24s infinite;  
+}
+@keyframes circle_3 {
+  0%{fill: transparent;}
+  0% {fill:transparent;}
+  5%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+
+svg circle:nth-child(4) {
+ animation: circle_4 24s infinite;  
+}
+@keyframes circle_4 {
+  0%{fill: transparent;}
+  8.33% {fill:transparent;}
+  13%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+svg circle:nth-child(5) {
+ animation: circle_5 24s infinite;  
+}
+@keyframes circle_5 {
+  0%{fill: transparent;}
+  16.7% {fill:transparent;}
+  21%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+svg circle:nth-child(6) {
+ animation: circle_6 24s infinite;  
+}
+@keyframes circle_6 {
+  0%{fill: transparent;}
+  24.33% {fill:transparent;}
+  29%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+svg circle:nth-child(7) {
+ animation: circle_7 24s infinite;  
+}
+@keyframes circle_7 {
+  0%{fill: transparent;}
+  33.33% {fill:transparent;}
+  38%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+svg circle:nth-child(8) {
+ animation: circle_8 24s infinite;  
+}
+@keyframes circle_8 {
+  0%{fill: transparent;}
+  41.66% {fill:transparent;}
+  46%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+svg circle:nth-child(9) {
+ animation: circle_9 24s infinite;  
+}
+@keyframes circle_9 {
+  0%{fill: transparent;}
+  50% {fill:transparent;}
+  55%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+
+svg circle:nth-child(10) {
+ animation: circle_10 24s infinite;  
+}
+@keyframes circle_10 {
+  0%{fill: transparent;}
+  58.33% {fill:transparent;}
+  63%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+svg circle:nth-child(11) {
+ animation: circle_11 24s infinite;  
+}
+@keyframes circle_11 {
+  0%{fill: transparent;}
+  66.6% {fill:transparent;}
+  71%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+
+svg circle:nth-child(12) {
+ animation: circle_12 24s infinite;  
+}
+@keyframes circle_12 {
+  0%{fill: transparent;}
+  75% {fill:transparent;}
+  80%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+
+svg circle:nth-child(13) {
+ animation: circle_13 24s infinite;  
+}
+@keyframes circle_13 {
+  0%{fill: transparent;}
+  83.3% {fill:transparent;}
+  87%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+
+svg circle:nth-child(14) {
+ animation: circle_14 24s infinite;  
+}
+@keyframes circle_14 {
+  0%{fill: transparent;}
+  91.7% {fill:transparent;}
+  95%{fill: #e45826;}
+  100%{fill: #e45826;}
+}
+
+
+
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1475;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media(max-width: 1023px){
+    #time .circle{
+        transform:scale(0.7);
+         width: 500px;
+  height: 500px;
+    }
+    #headingText h1{ 
+        
+        font-size: 50px; 
+ }
+#headingText h2{
+    font-size: 35px;
+ }
+}
+@media(max-width: 767px){
+    #time .circle{
+        transform:scale(0.4);
+        
+  width: 300px;
+  height: 300px;
+    }
+    #headingText h1{ 
+        
+        font-size: 40px; 
+ }
+#headingText h2{
+    font-size: 30px;
+ }
+}
+
+</style>
+
+<div id="time">
+		<div class="circle"> 
+
+
+			<svg> 
+				<polygon points="300,60 420,100 500,180 540,300 500,420 420,500 300,540 180,500 100,420 60,300 100,180 180,100"></polygon>
+				<polygon points="300,60 420,100 500,180 540,300 500,420 420,500 300,540 180,500 100,420 60,300 100,180 180,100" id="ss"></polygon>
+				<circle cx="300" cy="60" r="8"></circle>
+				<circle cx="420" cy="100" r="8"></circle>
+				<circle cx="500" cy="180" r="8"></circle>
+				<circle cx="540" cy="300" r="8"></circle>
+				<circle cx="500" cy="420" r="8"></circle>
+				<circle cx="420" cy="500" r="8"></circle>
+				<circle cx="300" cy="540" r="8"></circle>
+				<circle cx="180" cy="500" r="8"></circle>
+				<circle cx="100" cy="420" r="8"></circle>
+				<circle cx="60" cy="300" r="8"></circle>
+				<circle cx="100" cy="180" r="8"></circle>
+				<circle cx="180" cy="100" r="8"></circle>
+			</svg>
+
+			<svg> 
+    						<style>
+    							.small {
+    								font: 10px Lato;
+    								letter-spacing: 0.1rem;
+    								font-weight: lighter;
+    							}
+    						</style>
+    						<text x="450" y="160" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle"> CODE OF CONDUCT
+						    </text>
+						    <text x="450" y="180" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">  &amp; RESPONSIBILITY
+						    </text>
+						    <text x="640" y="230" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle"> PRODUCT DESIGN &amp;
+						    </text>
+						    <text x="640" y="250" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">DEVELOPMENT
+						    </text>
+						    <text x="710" y="320" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">VENDOR
+						    </text>
+						    <text x="710" y="340" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">COMPLIANCE
+						    </text>
+						    <text x="760" y="438" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">RAW MATERIAL
+						    </text>
+						    <text x="760" y="458" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">SOURCING
+						    </text>
+						    <text x="720" y="566" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">FACTORY
+						    </text>
+						    <text x="720" y="585" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">SOURCING
+						    </text>
+						    <text x="635" y="655" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle"> ORDER
+						    </text>
+						    <text x="635" y="675" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">NEGOTIATION
+						    </text>
+						    <text x="450" y="720" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">WORK IN PROGRESS
+						    </text>
+						    <text x="450" y="740" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">SUPERVISION
+						    </text>
+						    <text x="260" y="655" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle"> PLANNING</text>
+						    <text x="260" y="675" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">&amp; MANAGEMENT</text>
+						    <text x="160" y="566" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">MANUFACTURING
+						    </text>
+						    <text x="160" y="586" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">CONTROL
+						    </text>
+						    <text x="140" y="438" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">QUALITY
+						    </text>
+						    <text x="140" y="458" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">ASSURANCE
+						    </text>
+						    <text x="190" y="320" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">LOGISTIC
+						    </text>
+						    <text x="190" y="340" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">SUPPORT
+						    </text>
+						    <text x="245" y="230" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle"> EXPORT
+						    </text>
+						    <text x="245" y="250" class="small" text-anchor="middle" stroke="#b3b3b3" stroke-width="1px" alignment-baseline="middle">DOCUMENTATION
+						    </text>
+    					</svg>
+
+		 <div id="headingText">
+    						<h1>Supply Chain</h1>
+    						<h2>Management</h2>
+    						<!-- <p id="sec"></p> -->
+    					</div>
+		</div>
+	</div>
